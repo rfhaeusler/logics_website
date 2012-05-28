@@ -34,7 +34,7 @@ h3 {
     font-size: 1.6em;
 }
 
-p, ul, ol {
+p, ul {
     margin-top: 0;
     line-height: 180%;
 }
@@ -126,6 +126,7 @@ a {
     border-bottom: 1px dashed #808080;
 }
 
+   
 #menu a {
     display: block;
     width: 260px;
@@ -144,6 +145,12 @@ a {
     background: #561924;
     text-decoration: none;
 }
+#hiden a{
+ padding-left: 16px
+}
+dt:hover{
+   background: #808080;
+} 
 
 
 /* Page */

@@ -6,7 +6,25 @@
     <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-     
+    <script>
+		 $(document).ready(function() {		 
+                 $("#submenu").hide() 		 
+		 $('#nav li').hover(
+		 function () {
+		 //show its submenu
+		 $('dl', this).slideDown(100);
+		 
+		 },
+		 function () {
+		 //hide its submenu
+		 $('dl', this).slideUp(100);        
+		 }
+		 );		   
+		 
+                 });
+                 
+                
+               </script>
   </head>
   <body  style="background: url(images/img01.jpg) repeat;" >
     <div id="wrapper">
@@ -33,22 +51,19 @@
 	      </div>
 	      <div id="menu">
              
-		<ul>
+		<ul id="nav">
 		  <hr style="color: #808080;">		 
 		  <li class="current_page_item"><a href="/">Home</a></li>
-		  <li id="topics"><a href="/research.html">Research Topics</a></li>
-                  <!-- <li id="hiden"><a href="/">topic</a></li> -->		 
+		  <li><a href="/research.html">Research Topics</a>
+                    <dl id="submenu">
+                      <dt id="hiden"><a href="/" >topic1</a></dt>
+                      <dt id="hiden"><a href="/" >topic2</a></dt>
+		    </dl>                 
+		  </li>
                   <li><a href="/team.html">Team</a></li>
 		  <li><a href="/applications.html">Applications</a></li>
-		</ul>
-	      <!--  <script> -->
-<!--                 $("#topics").click(function(event){ -->
-<!-- event.preventDefault(); -->
-<!--                   $("#hiden").slideDown();}); -->
-                 
-<!--                 $("#hiden").hide(); -->
-                
-<!--                </script>	 -->
+		</dl>
+	       
 	      </div>
 	      <div style="clear: both;"> &nbsp;</div>
 	    </div>
