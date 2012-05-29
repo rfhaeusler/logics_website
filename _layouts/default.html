@@ -7,24 +7,36 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <script>
-		 $(document).ready(function() {		 
-                 $("#submenu").hide() 		 
-		 $('#nav li').hover(
-		 function () {
-		 //show its submenu
-		 $('dl', this).slideDown(100);
-		 
-		 },
-		 function () {
-		 //hide its submenu
-		 $('dl', this).slideUp(100);        
-		 }
-		 );		   
-		 
-                 });
-                 
-                
-               </script>
+      $(document).ready(function() {		 
+      $("#hiden").hide()
+      $("#submenu").click(function(){
+      if ($("#hiden").is(":hidden")) {
+$("#hiden").slideDown("slow");
+} else {
+$("#hiden").hide("slow");
+}
+
+         
+      
+      });
+      });
+      
+      <!-- $('#nav dt').hover( -->
+      <!-- function () { -->
+      <!-- //show its submenu -->
+      <!-- $('div', this).slideDown(100); -->
+      
+      <!-- }, -->
+      <!-- function () { -->
+      <!-- //hide its submenu -->
+      <!-- $('div', this).slideUp(100); -->
+      <!-- } -->
+      <!-- );		    -->
+      
+      <!-- }); -->
+      
+      
+    </script>
   </head>
   <body  style="background: url(images/img01.jpg) repeat;" >
     <div id="wrapper">
@@ -45,20 +57,33 @@
 		<p>at &nbsp;<a href="http://emap.fgv.br/"> EMAp/FGV</a></p>
 	      </div>
 	      <div id="menu">
-             
-		<ul id="nav">
-		  <hr style="color: #808080;">		 
-		  <li class="current_page_item"><a href="/">Home</a></li>
-		  <li><a href="/research.html">Research Topics</a>
-                    <dl id="submenu">
-                      <dt id="hiden"><a href="/" >topic1</a></dt>
-                      <dt id="hiden"><a href="/" >topic2</a></dt>
-		    </dl>                 
-		  </li>
-                  <li><a href="/team.html">Team</a></li>
-		  <li><a href="/applications.html">Applications</a></li>
+		
+		<!-- <ul id="nav"> -->
+		<!--   <hr style="color: #808080;">		  -->
+		<!--   <li class="current_page_item"><a href="/">Home</a></li> -->
+		<!--   <li><a href="/research.html">Research Topics</a> -->
+                <!--     <dl id="submenu"> -->
+                <!--       <dt id="hiden"><a href="/" >topic1</a></dt> -->
+                <!--       <dt id="hiden"><a href="/" >topic2</a></dt> -->
+		<!--     </dl>                  -->
+		<!--   </li> -->
+                <!--   <li><a href="/team.html">Team</a></li> -->
+		<!--   <li><a href="/applications.html">Applications</a></li> -->
+	 	<!-- </ul> -->
+                <dl id="nav">
+		  <hr style="color: #808080;"></hr>		 
+		  <dt><a href="/">Home</a></dt>
+		  <dt><a id="submenu" href="#">Research Topics [+]</a></dt>
+                  <div id="hiden">
+                    
+                    <dd><a href="/">topic1</a></dd>
+                    <dd><a href="/">topic2</a></dd>
+		    
+		  </div>
+                  <dt><a href="/team.html">Team</a></dt>
+		  <dt><a href="/applications.html">Applications</a></dt>
 		</dl>
-	       
+		
 	      </div>
 	      <div style="clear: both;"> &nbsp;</div>
 	    </div>
