@@ -21,24 +21,11 @@ $("#hiden").hide("slow");
       });
       });
       
-      <!-- $('#nav dt').hover( -->
-      <!-- function () { -->
-      <!-- //show its submenu -->
-      <!-- $('div', this).slideDown(100); -->
-      
-      <!-- }, -->
-      <!-- function () { -->
-      <!-- //hide its submenu -->
-      <!-- $('div', this).slideUp(100); -->
-      <!-- } -->
-      <!-- );		    -->
-      
-      <!-- }); -->
       
       
     </script>
   </head>
-  <body  style="background: url(images/img01.jpg) repeat;" >
+  <body  style="background: url(images/img01.jpg);" >
     <div id="wrapper">
       <div id="page">
 	<div id="page-bgtop">
@@ -47,7 +34,7 @@ $("#hiden").hide("slow");
 
 	    <div id="content">
 	      <h2>Team</h2><br>
-	      <p class="meta" style="background: url(images/img03.png) repeat;"><span class="date">dd/mm/aaaa</span><span class="posted">Posted by:...</span></p>
+	      <p class="meta" style="background: url(images/img03.png);"><span class="date">dd/mm/aaaa</span><span class="posted">Posted by:...</span></p>
 	      <ul>
 <li> <a href="http://arademaker.github.com/">Alexandre Rademaker</a></li>
 <li> Rafael Haeusler</li>
@@ -63,23 +50,11 @@ $("#hiden").hide("slow");
 	      </div>
 	      <div id="menu">
 		
-		<!-- <ul id="nav"> -->
-		<!--   <hr style="color: #808080;">		  -->
-		<!--   <li class="current_page_item"><a href="/">Home</a></li> -->
-		<!--   <li><a href="/research.html">Research Topics</a> -->
-                <!--     <dl id="submenu"> -->
-                <!--       <dt id="hiden"><a href="/" >topic1</a></dt> -->
-                <!--       <dt id="hiden"><a href="/" >topic2</a></dt> -->
-		<!--     </dl>                  -->
-		<!--   </li> -->
-                <!--   <li><a href="/team.html">Team</a></li> -->
-		<!--   <li><a href="/applications.html">Applications</a></li> -->
-	 	<!-- </ul> -->
                 <dl id="nav">
 		  <hr style="color: #808080;"></hr>		 
 		  <dt><a href="/">Home</a></dt>
 		  <dt><a id="submenu" href="#">Research Topics [+]</a></dt>
-                  <div id="hiden">
+                  <div id="hiden" style="background: url(images/img02.jpg);">
                     
                     <dd><a href="/research.html">topic1</a></dd>
                     <dd><a href="/research.html">topic2</a></dd>
